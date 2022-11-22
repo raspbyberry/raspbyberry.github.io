@@ -1,0 +1,115 @@
+a {
+    color: hotpink;
+    text-decoration: none;
+}
+
+a:hover {
+    color: dodgerblue;
+    opacity: 0.5;
+}
+
+h1 {
+    text-decoration: underline dodgerblue;
+}
+
+h2 {
+    text-decoration: underline dodgerblue;
+}
+
+hr {
+    border: none;
+    background-color: dodgerblue;
+    background: linear-gradient(to right, transparent, red, orange, yellow, green, cyan, blue, violet, transparent);
+    height: 2px;
+}
+
+body {
+    background-color: skyblue;
+    background-image: linear-gradient(to bottom right, transparent 50%, red, orange, yellow, green, blue, purple, transparent 70%), url(../images/cloud.jpg);
+    background-blend-mode: screen, normal;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #00a596;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.flexcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+#window {
+    margin: auto;
+    max-width: fit-content;
+}
+
+#content {
+    background-color: rgba(255, 250, 240, 0.8);
+    border: thick outset royalblue;
+    border-top: none;
+    padding: 16px;
+}
+
+#titlebar {
+    background-color: dodgerblue;
+    background-image: linear-gradient(lightblue, dodgerblue 10%);
+    border: thin solid royalblue;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: floralwhite;
+    text-shadow: 1px 1px darkblue;
+    font-family:"Tahoma", sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+
+.titlebarchild {
+    padding: 4px;
+}
+
+#raspbyfig {
+    max-width: fit-content;
+    margin: auto;
+}
+
+#raspbyfig > figcaption {
+    text-align: right;
+    font-size: smaller;
+}
+
+.woodpanelcontainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.woodpanelcontainer > figure {
+    background: url(../images/wood.png) no-repeat;
+    background-blend-mode: color-burn;
+    background-size: 100% 100%;
+    border: thick outset;
+    padding: 16px;
+    flex: 1;
+}
+
+.woodpanelcontainer > figure > figcaption {
+    background-color: rgba(255, 250, 240, 0.8);
+}
+
+#woodpanelgallery {
+    background-color: lightpink;
+    border-color: lightpink;
+}
+
+#woodpanelmoosic {
+    background-color: navajowhite;
+    border-color: navajowhite;
+}
+
+#woodpanelimnotsureyet {
+    background-color: lightblue;
+    border-color: lightblue;
+}
