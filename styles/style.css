@@ -8,11 +8,7 @@ a:hover {
     opacity: 0.5;
 }
 
-h1 {
-    text-decoration: underline dodgerblue;
-}
-
-h2 {
+h1, h2 {
     text-decoration: underline dodgerblue;
 }
 
@@ -86,20 +82,31 @@ body {
     flex-wrap: wrap;
 }
 
-.woodpanelcontainer > figure {
+.woodpanelcontainer > div {
     background: url(../images/wood.png) no-repeat;
     background-blend-mode: color-burn;
     background-size: 100% 100%;
     border: thick outset;
     padding: 16px;
     flex: 1;
+    margin: 16px;
 }
 
-.woodpanelcontainer > figure > figcaption {
+.woodpanelcontainer > div > p {
     background-color: rgba(255, 250, 240, 0.8);
+    margin: auto;
+    max-width:fit-content;
+    padding: 4px;
 }
 
-#woodpanelgallery {
+.woodpanelcontainer > div > h3 {
+    background-color: rgba(255, 250, 240, 0.8);
+    margin: auto;
+    max-width:fit-content;
+    padding: 4px;
+}
+
+#woodpanelidk {
     background-color: lightpink;
     border-color: lightpink;
 }
@@ -109,7 +116,7 @@ body {
     border-color: navajowhite;
 }
 
-#woodpanelimnotsureyet {
+#woodpanelcredits {
     background-color: lightblue;
     border-color: lightblue;
 }
