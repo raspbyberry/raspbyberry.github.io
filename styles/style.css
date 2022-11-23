@@ -1,10 +1,11 @@
 a {
-    color: hotpink;
+    color: mediumslateblue;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
-    color: dodgerblue;
+    color: mediumaquamarine;
     opacity: 0.5;
 }
 
@@ -47,6 +48,7 @@ body {
 
 .flexcontainerlinks > div > p {
     margin: auto;
+    font-weight: bold;
 }
 
 #window {
@@ -123,16 +125,16 @@ body {
 }
 
 #woodpanelidk {
-    background-color: lightpink;
-    border-color: lightpink;
+    background-color: mediumturquoise;
+    border-color: mediumturquoise;
 }
 
 #woodpanelmoosic {
-    background-color: navajowhite;
-    border-color: navajowhite;
+    background-color: lightskyblue;
+    border-color: lightskyblue;
 }
 
 #woodpanelcredits {
-    background-color: lightblue;
-    border-color: lightblue;
+    background-color: plum;
+    border-color: plum;
 }
