@@ -20,6 +20,11 @@ hr {
     height: 2px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     background-color: skyblue;
     background-image: linear-gradient(to bottom right, transparent 50%, red, orange, yellow, green, blue, purple, transparent 70%), url(../images/cloud.jpg);
@@ -28,18 +33,21 @@ body {
     background-position: center;
     text-align: center;
     color: #00a596;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
 }
 
 .flexcontainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-wrap: wrap;
     text-align: left;
 }
 
 .flexcontainerlinks {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .flexcontainerlinks > a > p {
@@ -53,7 +61,8 @@ body {
 
 #window {
     margin: auto;
-    max-width: fit-content;
+    max-width: max-content;
+    height: auto;
 }
 
 #content {
@@ -71,7 +80,7 @@ body {
     border-top-right-radius: 8px;
     color: floralwhite;
     text-shadow: 1px 1px darkblue;
-    font-family:"Tahoma", sans-serif;
+    font-family: "Tahoma", sans-serif;
     display: flex;
     align-items: center;
     padding: 4px;
@@ -93,7 +102,6 @@ body {
 
 .woodpanelcontainer {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -103,8 +111,8 @@ body {
     background-size: 100% 100%;
     border: thick outset;
     padding: 16px;
-    flex: 1;
     margin: 16px;
+    flex: 1;
 }
 
 .woodpanelcontainer > div > p {
