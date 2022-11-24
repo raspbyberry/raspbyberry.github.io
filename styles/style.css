@@ -1,5 +1,15 @@
 @font-face {
     font-family: "Comic Neue";
+    src: local("Comic Neue Bold"), local(ComicNeue-Bold),
+        url(../fonts/ComicNeue-Bold.woff2) format(woff2),
+        url(../fonts/ComicNeue-Bold.woff) format(woff);
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Comic Neue";
     src: local("Comic Neue Regular"), local(ComicNeue-Regular),
         url(../fonts/ComicNeue-Regular.woff2) format(woff2),
         url(../fonts/ComicNeue-Regular.woff) format(woff);
@@ -47,25 +57,21 @@ body {
     font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
 }
 
-.flexcontainer {
+#flexlists {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     text-align: left;
 }
 
-.flexcontainerlinks {
+#flexlinks {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 16px;
 }
 
-.flexcontainerlinks > a > p {
-    margin: auto;
-}
-
-.flexcontainerlinks > div > p {
+#flexlinks > div > p, a > p {
     margin: auto;
     font-weight: bold;
 }
