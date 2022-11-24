@@ -1,23 +1,32 @@
+@font-face {
+    font-family: "Comic Neue";
+    src: local("Comic Neue Regular"), local(ComicNeue-Regular),
+        url(../fonts/ComicNeue-Regular.woff2) format(woff2),
+        url(../fonts/ComicNeue-Regular.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 a {
-    color: mediumslateblue;
-    text-decoration: none;
+    color: plum;
     font-weight: bold;
 }
 
 a:hover {
-    color: mediumaquamarine;
+    color: mediumturquoise;
     opacity: 0.5;
 }
 
 h1, h2 {
-    text-decoration: underline dodgerblue;
+    text-decoration: underline deepskyblue;
 }
 
 hr {
-    border: none;
-    background-color: dodgerblue;
-    background: linear-gradient(to right, transparent, red, orange, yellow, green, cyan, blue, violet, transparent);
-    height: 2px;
+    border-style: none;
+    border-top-style: dotted;
+    border-color: deepskyblue;
+    border-width: 4px;
 }
 
 img {
@@ -27,18 +36,20 @@ img {
 
 body {
     background-color: skyblue;
-    background-image: linear-gradient(to bottom right, transparent 50%, red, orange, yellow, green, blue, purple, transparent 70%), url(../images/cloud.jpg);
+    background-image: linear-gradient(to bottom right, transparent 50%, red, orange, yellow, green, blue, purple, transparent 70%)
+    , url(../images/cloud.jpg);
     background-blend-mode: screen, normal;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
-    color: #00a596;
-    font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
+    color: #00A596;
+    font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
 }
 
 .flexcontainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     text-align: left;
 }
@@ -62,7 +73,6 @@ body {
 #window {
     margin: auto;
     max-width: max-content;
-    height: auto;
 }
 
 #content {
@@ -83,15 +93,15 @@ body {
     font-family: "Tahoma", sans-serif;
     display: flex;
     align-items: center;
-    padding: 4px;
+    height: 32px;
 }
 
-.titlebarchild {
-    padding: 4px;
+#titlebar > * {
+    padding: 8px;
 }
 
 #raspbyfig {
-    max-width: fit-content;
+    max-width: max-content;
     margin: auto;
 }
 
@@ -120,7 +130,7 @@ body {
     margin: auto;
     max-width:fit-content;
     padding: 4px;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .woodpanelcontainer > div > h3 {
@@ -128,8 +138,8 @@ body {
     margin: auto;
     max-width:fit-content;
     padding: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 #woodpanelidk {
