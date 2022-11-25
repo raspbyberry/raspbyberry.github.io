@@ -52,6 +52,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    backdrop-filter: blur(8px);
     text-align: center;
     color: #00A596;
     font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
@@ -116,8 +117,8 @@ body {
 }
 
 #raspbyfig > figcaption {
-    text-align: right;
     font-size: smaller;
+    text-align: right;
 }
 
 .woodpanelcontainer {
