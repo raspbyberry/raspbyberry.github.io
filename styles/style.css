@@ -20,7 +20,6 @@
 
 a {
     color: plum;
-    font-weight: bold;
 }
 
 a:hover {
@@ -45,14 +44,16 @@ img {
 }
 
 body {
-    background-color: skyblue;
+    background-color: lightskyblue;
     background-image: linear-gradient(to bottom right, transparent 50%, red, orange, yellow, green, blue, purple, transparent 70%)
     , url(../images/cloud.jpg);
     background-blend-mode: screen, normal;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(8px);
+    margin: 0;
+    padding: 8px;
     text-align: center;
     color: #00A596;
     font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
