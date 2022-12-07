@@ -27,22 +27,6 @@ a:hover {
     opacity: 0.5;
 }
 
-h1, h2 {
-    text-decoration: underline deepskyblue;
-}
-
-hr {
-    border-style: none;
-    border-top-style: dotted;
-    border-color: deepskyblue;
-    border-width: 4px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 body {
     background-color: lightskyblue;
     background-image: linear-gradient(to bottom right, transparent 50%, red, orange, yellow, green, blue, purple, transparent 70%)
@@ -57,6 +41,26 @@ body {
     text-align: center;
     color: #00A596;
     font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
+}
+
+h1, h2 {
+    text-decoration: underline deepskyblue;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: deepskyblue;
+    border-width: 4px;
+}
+
+html {
+    min-height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 #flexlists {
@@ -81,35 +85,56 @@ body {
     font-weight: bold;
 }
 
-#window {
+#centercontainer {
     margin: auto;
     max-width: max-content;
 }
 
-#content {
+#window {
+    box-shadow: 2px 2px 8px navy;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#windowcontent {
     background-color: rgba(255, 250, 240, 0.8);
     border: thick outset royalblue;
     border-top: none;
     padding: 16px;
 }
 
-#titlebar {
-    background-color: dodgerblue;
-    background-image: linear-gradient(lightblue, dodgerblue 10%);
+#windowtitlebar {
+    background-color: lightskyblue;
+    background-image: linear-gradient(lightskyblue, dodgerblue 10%);
     border: thin solid royalblue;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     color: floralwhite;
-    text-shadow: 1px 1px darkblue;
+    text-shadow: 1px 1px navy;
     font-family: "Tahoma", sans-serif;
     display: flex;
     align-items: center;
     height: 32px;
 }
 
-#titlebar > img {
+#windowtitlebar > img {
     padding: 8px;
     image-rendering: pixelated;
+}
+
+#windowtitlebar > button {
+    display: inline-flex;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: 8px;
+    border: thin solid floralwhite;
+    border-radius: 4px;
+    background-color: plum;
+    background-image: linear-gradient(to bottom right, floralwhite, plum 10%, purple);
+}
+
+#windowtitlebar > button:active {
+    background: purple;
 }
 
 #raspbyfig {
@@ -122,12 +147,12 @@ body {
     text-align: right;
 }
 
-.woodpanelcontainer {
+.blockcontainer {
     display: flex;
     flex-wrap: wrap;
 }
 
-.woodpanelcontainer > div {
+.blockcontainer > div {
     background: url(../images/wood.png) no-repeat;
     background-blend-mode: color-burn;
     background-size: 100% 100%;
@@ -137,7 +162,7 @@ body {
     flex: 1;
 }
 
-.woodpanelcontainer > div > p {
+.blockcontainer > div > p {
     background-color: rgba(255, 250, 240, 0.8);
     margin: auto;
     max-width:fit-content;
@@ -145,7 +170,7 @@ body {
     border-radius: 8px;
 }
 
-.woodpanelcontainer > div > h3 {
+.blockcontainer > div > h3 {
     background-color: rgba(255, 250, 240, 0.8);
     margin: auto;
     max-width:fit-content;
@@ -154,17 +179,17 @@ body {
     border-top-right-radius: 8px;
 }
 
-#woodpanelidk {
+#blockidk {
     background-color: mediumturquoise;
     border-color: mediumturquoise;
 }
 
-#woodpanelmoosic {
+#blockmusic {
     background-color: lightskyblue;
     border-color: lightskyblue;
 }
 
-#woodpanelcredits {
+#blockcredits {
     background-color: plum;
     border-color: plum;
 }
