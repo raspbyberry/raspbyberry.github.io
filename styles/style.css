@@ -19,16 +19,16 @@
 }
 
 a {
-    color: plum;
+    color: #79cde5;
+    font-weight: bold;
 }
 
 a:hover {
-    color: mediumturquoise;
     opacity: 0.5;
 }
 
 body {
-    background-color: lightskyblue;
+    background-color: #cbecf3;
     background-image: linear-gradient(to bottom right, transparent 50%, red, orange, yellow, green, blue, purple, transparent 70%)
     , url(../images/cloud.jpg);
     background-blend-mode: screen, normal;
@@ -37,31 +37,34 @@ body {
     background-repeat: no-repeat;
     backdrop-filter: blur(8px);
     margin: 0;
-    text-align: center;
-    color: #00A596;
-    font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
+    text-align: center;
+    color: #383838;
 }
 
 footer {
-    background-color: rgba(255, 250, 240, 0.6);
+    background-color: rgba(172, 112, 120, 0.8);
+    color: white;
     margin-top: auto;
     width: 100%;
-    font-family: "Tahoma", sans-serif;
-    color: navy;
+    font-family: sans-serif;
 }
 
 h1, h2 {
-    text-decoration: underline deepskyblue;
+    background-color: #bd868c;
+    color: white;
+    padding: 8px;
+    border-radius: 24px;
+    margin: 8px;
+    font-family: sans-serif;
 }
 
 hr {
     border-style: none;
-    border-top-style: dotted;
-    border-color: deepskyblue;
-    border-width: 4px;
+    border-top: dotted #fee9f0 thick; 
 }
 
 img {
@@ -69,20 +72,25 @@ img {
     height: auto;
 }
 
+ul {
+    text-align: left;
+    margin: 16px;
+    padding-left: 16px;
+}
+
+li::marker {
+    color: #c9e9c0;
+}
+
+li {
+    border-bottom: dotted #fee9f0 thick;
+}
+
 #backgroundattachment {
     background-attachment: fixed;
     background-position: left 2% center;
     background-repeat: no-repeat;
     width: 100%;
-}
-
-#flexlists {
-    column-count: auto;
-    column-width: 300px;
-    text-align: left;
-    margin: auto;
-    width: 90%;
-    padding-bottom: 8px;
 }
 
 #flexlinks {
@@ -103,110 +111,47 @@ img {
     max-width: max-content;
 }
 
-#window {
-    box-shadow: 2px 2px 8px navy;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    margin-left: 8px;
-    margin-right: 8px;
-}
-
-#windowcontent {
-    background-color: rgba(255, 250, 240, 0.8);
-    border: thick outset royalblue;
-    border-top: none;
+#menu {
+    background-color:rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 8px #75575f;
+    border: solid #75575f thick;
+    border-radius: 16px;
     padding: 16px;
+    margin: 8px
 }
 
-#windowtitlebar {
-    background-color: lightskyblue;
-    background-image: linear-gradient(lightskyblue, dodgerblue 10%);
-    border: thin solid royalblue;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    color: floralwhite;
-    text-shadow: 1px 1px navy;
-    font-family: "Tahoma", sans-serif;
+#menuflex {
     display: flex;
-    align-items: center;
-    height: 32px;
+    flex-wrap: wrap;
 }
 
-#windowtitlebar > img {
-    padding: 8px;
-    image-rendering: pixelated;
-}
-
-#windowtitlebar > button {
-    display: inline-flex;
-    padding: 2px;
-    margin-left: auto;
-    margin-right: 8px;
-    border: thin solid floralwhite;
-    border-radius: 4px;
-    background-color: plum;
-    background-image: linear-gradient(to bottom right, floralwhite, plum 10%, purple);
-}
-
-#windowtitlebar > button:active {
-    background: purple;
+#menuflex > div {
+    flex-grow: 1;
 }
 
 #raspbyfig {
     max-width: max-content;
     margin: auto;
-}
-
-#raspbyfig > figcaption {
-    font-size: smaller;
     text-align: right;
 }
 
-.blockcontainer {
+#menutop {
     display: flex;
     flex-wrap: wrap;
 }
 
-.blockcontainer > div {
-    background: url(../images/wood.png) no-repeat;
-    background-blend-mode: color-burn;
-    background-size: 100% 100%;
-    border: thick outset;
-    padding: 16px;
-    margin: 8px;
-    min-width: 150px;
-    min-height: 100px;
-    flex: 1;
-}
-
-.blockcontainer > div > p {
-    background-color: rgba(255, 250, 240, 0.8);
+#menubanner {
     margin: auto;
-    max-width:fit-content;
-    padding: 4px;
-    border-radius: 8px;
+    flex-grow: 1;
 }
 
-.blockcontainer > div > h3 {
-    background-color: rgba(255, 250, 240, 0.8);
-    margin: auto;
-    max-width:fit-content;
-    padding: 4px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-#block1 {
-    background-color: mediumturquoise;
-    border-color: mediumturquoise;
-}
-
-#block2 {
-    background-color: lightskyblue;
-    border-color: lightskyblue;
-}
-
-#block3 {
-    background-color: plum;
-    border-color: plum;
+#menulogo {
+    background-color: #c9e9c0;
+    color: #75575f;
+    border-radius: 100%;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-family: serif;
+    margin-left: 16px;
 }
