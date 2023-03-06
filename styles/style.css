@@ -95,9 +95,8 @@ li {
 
 #flexlinks {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 16px;
     image-rendering: pixelated;
 }
 
@@ -108,7 +107,7 @@ li {
 
 #centercontainer {
     margin: auto;
-    max-width: max-content;
+    max-width: 1280px;
 }
 
 #menu {
@@ -132,26 +131,13 @@ li {
 #raspbyfig {
     max-width: max-content;
     margin: auto;
+}
+
+figcaption {
     text-align: right;
 }
 
-#menutop {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#menubanner {
-    margin: auto;
-    flex-grow: 1;
-}
-
-#menulogo {
-    background-color: #c9e9c0;
-    color: #75575f;
-    border-radius: 100%;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    font-family: serif;
-    margin-left: 16px;
+.tab {
+    text-indent: 32px;
+    text-align: left;
 }
