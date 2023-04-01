@@ -57,6 +57,8 @@ h1, h2 {
     background-color: #bd868c;
     color: white;
     padding: 8px;
+    border: solid #fbf1e6 medium;
+    box-shadow: 0px 4px #fbf1e6;
     border-radius: 24px;
     margin: 8px;
     font-family: sans-serif;
@@ -93,6 +95,10 @@ li {
     width: 100%;
 }
 
+#blurple {
+    color:#7289DA;
+}
+
 #flexlinks {
     display: flex;
     justify-content: space-around;
@@ -111,12 +117,11 @@ li {
 }
 
 #menu {
-    background-color:rgba(255, 255, 255, 0.8);
-    box-shadow: 2px 2px 8px #75575f;
+    background-color:rgba(255, 255, 255, 0.9);
     border: solid #75575f thick;
     border-radius: 16px;
     padding: 16px;
-    margin: 8px
+    margin: 8px;
 }
 
 #menuflex {
