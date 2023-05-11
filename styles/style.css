@@ -25,6 +25,7 @@ a {
 
 a:hover {
     opacity: 0.5;
+    cursor: url(../images/cursor-pointer.png), auto;
 }
 
 body {
@@ -43,6 +44,7 @@ body {
     font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
     text-align: center;
     color: #383838;
+    cursor: url(../images/cursor-default.png), auto;
 }
 
 footer {
