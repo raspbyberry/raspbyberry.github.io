@@ -1,0 +1,152 @@
+@keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: 1920px -1920px; }
+}
+
+a {
+    color: hotpink;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: midnightblue;
+}
+
+body {
+    background-color: lightcyan;
+    font-family: monospace;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(../images/seamless-pattern-bubbles-on-dark-teal-background-abstract-texture-of-soap-for-any-purpose-vector.jpg);
+    background-repeat: repeat;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    backdrop-filter: blur(8px);
+}
+
+figure {
+    float: right;
+    background-color: whitesmoke;
+}
+
+figure > img {
+    border: ridge;
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+figcaption {
+    background-color: whitesmoke;
+    border: ridge;
+    text-align: right;
+    width: 100%;
+}
+
+footer {
+    background-color: rgba(255, 182, 193, 0.8);
+    color: white;
+    margin-top: auto;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1, h2 {
+    text-decoration: underline;
+    text-decoration-color: hotpink;
+}
+
+ul {
+    margin: 16px;
+    padding-left: 16px;
+}
+
+li {
+    list-style: square;
+    border-bottom: dashed thin;
+    padding-top: 4px;
+}
+
+
+#centercontainer {
+    margin: auto;
+    max-width: 1440px;
+}
+
+#floatdesc {
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+#flexlists {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#flexlists > div {
+    flex-grow: 1;
+}
+
+#flexpages {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+#flexpages > div {
+    background-image: url(../images/wood.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    flex-grow: 1;
+    margin: 8px;
+    text-align: center;
+    padding: 32px;
+}
+
+#raspby {
+    background-color: lightblue;
+    border: outset thick lightblue;
+}
+
+#slimegirl {
+    background-color: lightgreen;
+    border: outset thick lightgreen;
+}
+
+#titlebar {
+    background-color: mediumturquoise;
+    border: ridge aqua;
+    border-bottom: none;
+    margin: 8px;
+    margin-bottom: 0;
+    padding: 8px;
+    padding-right: 32px;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: max-content;
+    display: flex;
+    align-items: flex-start;
+}
+
+#titlebar > img {
+    image-rendering: pixelated;
+    padding-right: 8px;
+}
+
+#window {
+    background-color: rgba(255, 240, 245, 0.8);
+    background-color: lavenderblush;
+    border: ridge thick lightpink;
+    margin: 8px;
+    margin-top: 0;
+    padding: 16px;
+}

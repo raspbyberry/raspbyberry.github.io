@@ -19,18 +19,18 @@
 }
 
 a {
-    color: #79cde5;
+    color: lightskyblue;
     font-weight: bold;
 }
 
 a:hover {
-    opacity: 0.5;
+    color: midnightblue;
     cursor: url(../images/cursor-pointer.png), auto;
 }
 
 body {
-    background-color: #cbecf3;
-    background-image: linear-gradient(to bottom right, transparent 50%, red, orange, yellow, green, blue, purple, transparent 70%)
+    background-color: lightblue;
+    background-image: linear-gradient(to bottom right, transparent 40%, red, orange, yellow, green, blue, purple, transparent 60%)
     , url(../images/cloud.jpg);
     background-blend-mode: screen, normal;
     background-position: center;
@@ -43,37 +43,30 @@ body {
     min-height: 100vh;
     font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
     text-align: center;
-    color: #383838;
     cursor: url(../images/cursor-default.png), auto;
 }
 
+figure > img {
+    border-radius: 24px;
+}
+
 footer {
-    background-color: rgba(172, 112, 120, 0.8);
+    background-color: rgba(173, 216, 230, 0.8);
     color: white;
     margin-top: auto;
     width: 100%;
     font-family: sans-serif;
+    font-weight: bold;
 }
 
 h1, h2 {
-    background-color: #bd868c;
+    background-color: lightblue;
     color: white;
     padding: 8px;
     border: solid #fbf1e6 medium;
     box-shadow: 0px 4px #fbf1e6;
     border-radius: 24px;
     margin: 8px;
-    font-family: sans-serif;
-}
-
-hr {
-    border-style: none;
-    border-top: dotted #fee9f0 thick; 
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 ul {
@@ -83,29 +76,22 @@ ul {
 }
 
 li::marker {
-    color: #c9e9c0;
+    color: lightblue;
 }
 
 li {
-    border-bottom: dotted #fee9f0 thick;
-}
-
-#backgroundattachment {
-    background-attachment: fixed;
-    background-position: left 2% center;
-    background-repeat: no-repeat;
-    width: 100%;
+    border-bottom: dotted 2px lightsteelblue;
+    padding-top: 4px;
 }
 
 #blurple {
-    color:#7289DA;
+    color: #5865F2;
 }
 
 #flexlinks {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    image-rendering: pixelated;
 }
 
 #flexlinks > div > p, a > p {
@@ -113,34 +99,55 @@ li {
     font-weight: bold;
 }
 
-#centercontainer {
-    margin: auto;
-    max-width: 1280px;
-}
-
-#menu {
-    background-color:rgba(255, 255, 255, 0.9);
-    border: solid #75575f thick;
-    border-radius: 16px;
-    padding: 16px;
-    margin: 8px;
-}
-
-#menuflex {
+#flexlists {
     display: flex;
     flex-wrap: wrap;
 }
 
-#menuflex > div {
+#flexlists > div {
     flex-grow: 1;
 }
 
-#raspbyfig {
-    max-width: max-content;
-    margin: auto;
+#flexpages {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
 }
 
-.tab {
-    text-indent: 32px;
-    text-align: left;
+#flexpages > div {
+    background-color: rgba(245, 255, 250, 0.8);
+    flex-grow: 1;
+    margin: 8px;
+    padding: 16px;
+}
+
+.imgscale {
+    max-width: 100%;
+    height: auto;
+}
+
+#marielle {
+    border: solid medium;
+    border-image: repeating-linear-gradient(-45deg, lightpink, lightpink 8px, mintcream 8px, mintcream 16px);
+    border-image-slice: 1;
+}
+
+#slimegirl {
+    border: solid medium;
+    border-image: repeating-linear-gradient(-45deg, lightgreen, lightgreen 8px, mintcream 8px, mintcream 16px);
+    border-image-slice: 1;
+}
+
+#centercontainer {
+    margin: auto;
+    max-width: 1440px;
+}
+
+#menu {
+    background-color:rgba(245, 255, 250, 0.8);
+    padding: 16px;
+    margin: 8px;
+    border: solid medium;
+    border-image: repeating-linear-gradient(-45deg, lightblue, lightblue 8px, mintcream 8px, mintcream 16px);
+    border-image-slice: 1;
 }
