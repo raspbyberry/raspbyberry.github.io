@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "Comic Neue";
+    src: local("Comic Neue Bold"), local(ComicNeue-Bold),
+        url(../fonts/ComicNeue-Bold.woff2) format(woff2),
+        url(../fonts/ComicNeue-Bold.woff) format(woff);
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Comic Neue";
+    src: local("Comic Neue Regular"), local(ComicNeue-Regular),
+        url(../fonts/ComicNeue-Regular.woff2) format(woff2),
+        url(../fonts/ComicNeue-Regular.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+a {
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+a:hover {
+    color: midnightblue;
+    cursor: url(../images/cursor-pointer.png), auto;
+}
+
+body {
+    background-color: lightblue;
+    background-image: linear-gradient(to bottom right, transparent 40%, red, orange, yellow, green, blue, purple, transparent 60%)
+    , url(../images/cloud.jpg);
+    background-blend-mode: screen, normal;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(8px);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
+    text-align: center;
+    cursor: url(../images/cursor-default.png), auto;
+}
+
+figure > img {
+    border-radius: 24px;
+}
+
+footer {
+    background-color: rgba(173, 216, 230, 0.8);
+    color: white;
+    margin-top: auto;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+h1, h2 {
+    background-color: lightblue;
+    color: white;
+    padding: 8px;
+    border: solid #fbf1e6 medium;
+    box-shadow: 0px 4px #fbf1e6;
+    border-radius: 24px;
+    margin: 8px;
+}
+
+ul {
+    text-align: left;
+    margin: 16px;
+    padding-left: 16px;
+}
+
+li::marker {
+    color: lightblue;
+}
+
+li {
+    border-bottom: dotted 2px lightsteelblue;
+    padding-top: 4px;
+}
+
+#blurple {
+    color: #5865F2;
+}
+
+#flexlinks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#flexlinks > div > p, a > p {
+    margin: auto;
+    font-weight: bold;
+}
+
+#flexlists {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#flexlists > div {
+    flex-grow: 1;
+}
+
+#flexpages {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+#flexpages > div {
+    background-color: rgba(245, 255, 250, 0.8);
+    flex-grow: 1;
+    margin: 8px;
+    padding: 16px;
+}
+
+.imgscale {
+    max-width: 100%;
+    height: auto;
+}
+
+#marielle {
+    border: solid medium;
+    border-image: repeating-linear-gradient(-45deg, lightpink, lightpink 8px, mintcream 8px, mintcream 16px);
+    border-image-slice: 1;
+}
+
+#slimegirl {
+    border: solid medium;
+    border-image: repeating-linear-gradient(-45deg, lightgreen, lightgreen 8px, mintcream 8px, mintcream 16px);
+    border-image-slice: 1;
+}
+
+#centercontainer {
+    margin: auto;
+    max-width: 1440px;
+}
+
+#menu {
+    background-color:rgba(245, 255, 250, 0.8);
+    padding: 16px;
+    margin: 8px;
+    border: solid medium;
+    border-image: repeating-linear-gradient(-45deg, lightblue, lightblue 8px, mintcream 8px, mintcream 16px);
+    border-image-slice: 1;
+}
