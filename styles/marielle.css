@@ -1,6 +1,6 @@
 @keyframes slide {
     from { background-position: 0 0; }
-    to { background-position: 1920px -1920px; }
+    to { background-position: 0px -1920px; }
 }
 
 a {
@@ -10,7 +10,6 @@ a {
 
 a:hover {
     color: midnightblue;
-    opacity: 0.5;
 }
 
 body {
@@ -26,23 +25,22 @@ body {
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(6px);
 }
 
 figure {
     float: right;
-    background-color: lavenderblush;
     border: outset lightpink;
 }
 
 figure > img {
     border: ridge lightpink;
-    max-width: 100%;
-    height: auto;
+    border-bottom: none;
+    display: block;
 }
 
 figcaption {
-    background-color: lavenderblush;
+    background-color: white;
     border: ridge lightpink;
     text-align: right;
 }
@@ -94,22 +92,25 @@ li {
     flex-grow: 1;
 }
 
-#flexpages {
+#flexpanels {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 8px;
 }
 
-#flexpages > div {
-    flex-grow: 1;
-    margin: 8px;
+#logocontainer {
+    padding: 16px;
     text-align: center;
 }
 
+.imgscale {
+    max-width: 100%;
+    height: auto;
+}
+
 #raspby {
-    background-image: url(../images/wood.webp);
+    background-image: url(../images/static.png), url(../images/wood.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: contain, 100% 100%;
     background-repeat: no-repeat;
     background-blend-mode: color-burn;
     background-color: lightblue;
@@ -117,10 +118,15 @@ li {
     padding: 64px;
 }
 
+#raspby:hover {
+    background-image: url(../images/blinking.gif), url(../images/wood.jpg);
+    background-blend-mode: normal, color-burn;
+}
+
 #slimegirl {
-    background-image: url(../images/wood.webp);
+    background-image: url(../images/wood.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-blend-mode: color-burn;
     background-color: lightgreen;
@@ -128,9 +134,19 @@ li {
     padding: 64px;
 }
 
+.panel {
+    flex-grow: 1;
+    margin: 8px;
+}
+
+.panel > p {
+    color: white;
+    font-weight: bold;
+}
+
 #titlebar {
-    background-color: mediumturquoise;
-    border: ridge aqua;
+    background: radial-gradient(mediumturquoise, darkcyan);
+    border: ridge cyan;
     border-bottom: none;
     margin: 8px;
     margin-bottom: 0;
@@ -149,8 +165,7 @@ li {
 }
 
 #window {
-    background-color: rgba(255, 240, 245, 0.8);
-    background-color: lavenderblush;
+    background-color: rgba(255, 240, 245, 0.95);
     border: ridge thick lightpink;
     margin: 8px;
     margin-top: 0;

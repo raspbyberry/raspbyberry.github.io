@@ -47,16 +47,20 @@ body {
     cursor: url(../images/cursor-default.png), auto;
 }
 
-figure > img {
+figure {
+    background-color: white;
     border-radius: 24px;
+    width: fit-content;
+    margin: 16px auto;
+}
+
+figure > img {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
 }
 
 figcaption {
-    background-color: white;
-    width: fit-content;
-    margin: auto;
     padding: 16px;
-    border-radius: 24px;
 }
 
 footer {
@@ -81,7 +85,7 @@ h2 {
     background-color: lightblue;
     color: white;
     padding: 8px;
-    border: solid #fbf1e6 medium;
+    border: solid #fbf1e6;
     box-shadow: 0px 4px #fbf1e6;
     border-radius: 24px;
     margin: 8px;
@@ -93,6 +97,12 @@ h3 {
     padding: 8px;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
+}
+
+hr {
+    border: none;
+    border-top: dotted thick lightblue;
+    margin: 16px;
 }
 
 ul {
@@ -137,25 +147,25 @@ li {
     flex-grow: 1;
 }
 
-#flexpages {
+#flexpanels {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 8px;
 }
 
-#flexpages > div {
+#flexpanels > div {
     flex-grow: 1;
     margin: 8px;
 }
 
-#flexpages > div > a {
+#flexpanels > div > a {
     text-decoration: none;
 }
 
 #gridlinks {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+    gap: 4px;
 }
 
 #gridlinks > div > p {
@@ -170,7 +180,8 @@ li {
 
 #marielle {
     background-color: rgba(245, 255, 250, 0.8);
-    background-image: url(../images/marielle.png);
+    background-image: url(../images/marielletrans.webp);
+    background-repeat: no-repeat;
     background-position: center;
     border: solid medium;
     border-top: 0;
@@ -207,7 +218,7 @@ li {
     margin: 8px;
     margin-top: 0;
     border: solid medium;
-    border-top: none;
+    border-top: 0;
     border-image: repeating-linear-gradient(-45deg, lightblue, lightblue 8px, mintcream 8px, mintcream 16px);
     border-image-slice: 1;
 }
