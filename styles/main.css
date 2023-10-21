@@ -25,6 +25,7 @@ a {
 
 a:hover {
     color: midnightblue;
+    opacity: 0.5;
     cursor: url(../images/cursor-pointer.png), auto;
 }
 
@@ -50,6 +51,14 @@ figure > img {
     border-radius: 24px;
 }
 
+figcaption {
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    padding: 16px;
+    border-radius: 24px;
+}
+
 footer {
     background-color: rgba(173, 216, 230, 0.8);
     color: white;
@@ -59,7 +68,16 @@ footer {
     font-weight: bold;
 }
 
-h1, h2 {
+h1 {
+    background-color: lightblue;
+    color: white;
+    padding: 8px;
+    margin: 0 8px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+h2 {
     background-color: lightblue;
     color: white;
     padding: 8px;
@@ -69,10 +87,21 @@ h1, h2 {
     margin: 8px;
 }
 
+h3 {
+    color: white;
+    margin: 0;
+    padding: 8px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
 ul {
     text-align: left;
     margin: 16px;
-    padding-left: 16px;
+    padding: 16px;
+    padding-left: 32px;
+    background-color: white;
+    border-radius: 24px;
 }
 
 li::marker {
@@ -84,19 +113,19 @@ li {
     padding-top: 4px;
 }
 
+.desc {
+    margin: 16px;
+}
+
+.blob {
+    background-color: white;
+    border-radius: 24px;
+    padding: 16px;
+    margin: 16px;
+}
+
 #blurple {
     color: #5865F2;
-}
-
-#flexlinks {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#flexlinks > div > p, a > p {
-    margin: auto;
-    font-weight: bold;
 }
 
 #flexlists {
@@ -115,10 +144,23 @@ li {
 }
 
 #flexpages > div {
-    background-color: rgba(245, 255, 250, 0.8);
     flex-grow: 1;
     margin: 8px;
-    padding: 16px;
+}
+
+#flexpages > div > a {
+    text-decoration: none;
+}
+
+#gridlinks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+#gridlinks > div > p {
+    margin: auto;
+    font-weight: bold;
 }
 
 .imgscale {
@@ -127,15 +169,31 @@ li {
 }
 
 #marielle {
+    background-color: rgba(245, 255, 250, 0.8);
+    background-image: url(../images/marielle.png);
+    background-position: center;
     border: solid medium;
+    border-top: 0;
     border-image: repeating-linear-gradient(-45deg, lightpink, lightpink 8px, mintcream 8px, mintcream 16px);
     border-image-slice: 1;
+    padding: 64px;
+}
+
+#mariheader {
+    background-color: lightpink;
 }
 
 #slimegirl {
+    background-color: rgba(245, 255, 250, 0.8);
     border: solid medium;
+    border-top: 0;
     border-image: repeating-linear-gradient(-45deg, lightgreen, lightgreen 8px, mintcream 8px, mintcream 16px);
     border-image-slice: 1;
+    padding: 64px;
+}
+
+#slimeheader {
+    background-color: lightgreen;
 }
 
 #centercontainer {
@@ -147,7 +205,9 @@ li {
     background-color:rgba(245, 255, 250, 0.8);
     padding: 16px;
     margin: 8px;
+    margin-top: 0;
     border: solid medium;
+    border-top: none;
     border-image: repeating-linear-gradient(-45deg, lightblue, lightblue 8px, mintcream 8px, mintcream 16px);
     border-image-slice: 1;
 }

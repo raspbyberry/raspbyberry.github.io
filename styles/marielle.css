@@ -10,6 +10,7 @@ a {
 
 a:hover {
     color: midnightblue;
+    opacity: 0.5;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url(../images/seamless-pattern-bubbles-on-dark-teal-background-abstract-texture-of-soap-for-any-purpose-vector.jpg);
+    background-image: url(../images/bubbles.jpg);
     background-repeat: repeat;
     animation-name: slide;
     animation-duration: 10s;
@@ -30,21 +31,20 @@ body {
 
 figure {
     float: right;
-    background-color: whitesmoke;
+    background-color: lavenderblush;
+    border: outset lightpink;
 }
 
 figure > img {
-    border: ridge;
-    width: 100%;
+    border: ridge lightpink;
+    max-width: 100%;
     height: auto;
-    image-rendering: pixelated;
 }
 
 figcaption {
-    background-color: whitesmoke;
-    border: ridge;
+    background-color: lavenderblush;
+    border: ridge lightpink;
     text-align: right;
-    width: 100%;
 }
 
 footer {
@@ -101,25 +101,31 @@ li {
 }
 
 #flexpages > div {
+    flex-grow: 1;
+    margin: 8px;
+    text-align: center;
+}
+
+#raspby {
     background-image: url(../images/wood.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: color-burn;
-    flex-grow: 1;
-    margin: 8px;
-    text-align: center;
-    padding: 32px;
-}
-
-#raspby {
     background-color: lightblue;
     border: outset thick lightblue;
+    padding: 64px;
 }
 
 #slimegirl {
+    background-image: url(../images/wood.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
     background-color: lightgreen;
     border: outset thick lightgreen;
+    padding: 64px;
 }
 
 #titlebar {
