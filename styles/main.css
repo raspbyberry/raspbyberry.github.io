@@ -188,6 +188,7 @@ li {
     border-image: repeating-linear-gradient(-45deg, lightpink, lightpink 8px, mintcream 8px, mintcream 16px);
     border-image-slice: 1;
     padding: 64px;
+    box-shadow: 0 0 8px 8px mintcream inset;
 }
 
 #mariheader {
@@ -201,6 +202,7 @@ li {
     border-image: repeating-linear-gradient(-45deg, lightgreen, lightgreen 8px, mintcream 8px, mintcream 16px);
     border-image-slice: 1;
     padding: 64px;
+    box-shadow: 0 0 8px 8px mintcream inset;
 }
 
 #slimeheader {
@@ -221,4 +223,5 @@ li {
     border-top: 0;
     border-image: repeating-linear-gradient(-45deg, lightblue, lightblue 8px, mintcream 8px, mintcream 16px);
     border-image-slice: 1;
+    box-shadow: 0 0 8px 8px mintcream inset;
 }

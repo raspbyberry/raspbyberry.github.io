@@ -30,18 +30,17 @@ body {
 
 figure {
     float: right;
-    border: outset lightpink;
+    border: ridge thick lightpink;
+    overflow: hidden;
 }
 
 figure > img {
-    border: ridge lightpink;
-    border-bottom: none;
     display: block;
 }
 
 figcaption {
     background-color: white;
-    border: ridge lightpink;
+    border-top: ridge lightpink;
     text-align: right;
 }
 
@@ -145,8 +144,8 @@ li {
 }
 
 #titlebar {
-    background: radial-gradient(mediumturquoise, darkcyan);
-    border: ridge cyan;
+    background: radial-gradient(cyan, darkcyan);
+    border: ridge thick cyan;
     border-bottom: none;
     margin: 8px;
     margin-bottom: 0;
