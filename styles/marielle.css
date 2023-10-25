@@ -10,6 +10,7 @@ a {
 
 a:hover {
     color: midnightblue;
+    opacity: 0.5;
 }
 
 body {
@@ -40,7 +41,7 @@ figure > img {
 
 figcaption {
     background-color: white;
-    border-top: ridge lightpink;
+    border-top: ridge thick lightpink;
     text-align: right;
 }
 
@@ -94,6 +95,9 @@ li {
 #flexpanels {
     display: flex;
     flex-wrap: wrap;
+    image-rendering: pixelated;
+    color: white;
+    font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
 }
 
 #logocontainer {
@@ -113,13 +117,17 @@ li {
     background-repeat: no-repeat;
     background-blend-mode: color-burn;
     background-color: lightblue;
-    border: outset thick lightblue;
+    border: outset 16px lightblue;
     padding: 64px;
 }
 
 #raspby:hover {
     background-image: url(../images/blinking.gif), url(../images/wood.jpg);
     background-blend-mode: normal, color-burn;
+}
+
+#raspby:active {
+    border-style: inset;
 }
 
 #slimegirl {
@@ -129,8 +137,12 @@ li {
     background-repeat: no-repeat;
     background-blend-mode: color-burn;
     background-color: lightgreen;
-    border: outset thick lightgreen;
+    border: outset 16px lightgreen;
     padding: 64px;
+}
+
+#slimegirl:active {
+    border-style: inset;
 }
 
 .panel {
@@ -138,9 +150,8 @@ li {
     margin: 8px;
 }
 
-.panel > p {
-    color: white;
-    font-weight: bold;
+.panel > a {
+    opacity: 1;
 }
 
 #titlebar {
