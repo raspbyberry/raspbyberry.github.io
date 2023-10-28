@@ -1,10 +1,20 @@
+@font-face {
+    font-family: "Comic Neue";
+    src: local("Comic Neue Regular"), local(ComicNeue-Regular),
+        url(../fonts/ComicNeue-Regular.woff2) format(woff2),
+        url(../fonts/ComicNeue-Regular.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: 0px -1920px; }
+    from { background-position: 0 0, center; }
+    to { background-position: 0px -480px, center; }
 }
 
 a {
-    color: hotpink;
+    color: deeppink;
     font-weight: bolder;
 }
 
@@ -14,24 +24,26 @@ a:hover {
 }
 
 body {
-    background-color: lightcyan;
-    font-family: monospace;
+    background-color: darkslategray;
+    font-family: serif;
     margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url(../images/bubbles.jpg);
-    background-repeat: repeat;
+    background-image: url(../images/bubbles.jpg), url(../images/coral.jpg);
+    background-blend-mode: hard-light;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
     animation-name: slide;
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 8px black inset;
 }
 
 figure {
     float: right;
-    border: ridge thick lightpink;
     overflow: hidden;
 }
 
@@ -40,13 +52,11 @@ figure > img {
 }
 
 figcaption {
-    background-color: white;
-    border-top: ridge thick lightpink;
     text-align: right;
 }
 
 footer {
-    background-color: rgba(255, 182, 193, 0.8);
+    background-color: rgba(255, 192, 203, 0.8);
     color: white;
     margin-top: auto;
     width: 100%;
@@ -60,6 +70,10 @@ h1, h2 {
     text-decoration-color: hotpink;
 }
 
+hr {
+    border-color: lightpink;
+}
+
 ul {
     margin: 16px;
     padding-left: 16px;
@@ -67,10 +81,9 @@ ul {
 
 li {
     list-style: square;
-    border-bottom: dashed thin;
+    border-bottom: dashed thin lightpink;
     padding-top: 4px;
 }
-
 
 #centercontainer {
     margin: auto;
@@ -96,6 +109,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     image-rendering: pixelated;
+    margin-bottom: 8px;
     color: white;
     font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
 }
@@ -146,37 +160,51 @@ li {
 }
 
 .panel {
-    flex-grow: 1;
     margin: 8px;
+    flex-grow: 1;
+    display: flex;
 }
 
 .panel > a {
     opacity: 1;
+    flex-grow: 1;
+}
+
+.panel > div {
+    flex-grow: 1;
+}
+.panel > p {
+    margin: 16px;
+    width: 128px;
 }
 
 #titlebar {
-    background: radial-gradient(cyan, darkcyan);
-    border: ridge thick cyan;
+    background-color: mediumturquoise;
+    border: solid 2px pink;
     border-bottom: none;
+    box-shadow: 2px 2px cyan inset, -2px 0px darkcyan inset;
     margin: 8px;
     margin-bottom: 0;
-    padding: 8px;
-    padding-right: 32px;
+    padding: 4px;
+    padding-top: 6px;
     font-family: sans-serif;
     font-weight: bold;
     width: max-content;
     display: flex;
-    align-items: flex-start;
+    image-rendering: pixelated;
 }
 
-#titlebar > img {
-    image-rendering: pixelated;
-    padding-right: 8px;
+#titlebox1 {
+    padding-right: 16px;
+}
+
+#titlebox2 {
+    padding-left: 16px;
 }
 
 #window {
-    background-color: rgba(255, 240, 245, 0.95);
-    border: ridge thick lightpink;
+    background-color: lavenderblush;
+    border: ridge thick pink;
     margin: 8px;
     margin-top: 0;
     padding: 16px;
