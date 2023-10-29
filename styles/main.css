@@ -35,7 +35,7 @@ body {
     , url(../images/cloud.jpg);
     background-blend-mode: screen, normal;
     background-position: center;
-    background-size: cover;
+    background-size: auto, cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(8px);
     margin: 0;
@@ -72,16 +72,7 @@ footer {
     font-weight: bold;
 }
 
-h1 {
-    background-color: lightblue;
-    color: white;
-    padding: 8px;
-    margin: 0 8px;
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
-}
-
-h2 {
+#introh1, h2 {
     background-color: lightblue;
     color: white;
     padding: 8px;
@@ -101,7 +92,7 @@ h3 {
 
 hr {
     border: none;
-    border-top: dotted thick lightblue;
+    border-top: dotted thick skyblue;
     margin: 16px;
 }
 
@@ -115,7 +106,7 @@ ul {
 }
 
 li::marker {
-    color: lightblue;
+    color: skyblue;
 }
 
 li {
@@ -132,6 +123,14 @@ li {
     border-radius: 24px;
     padding: 16px;
     margin: 16px;
+}
+
+.blobfit {
+    background-color: white;
+    border-radius: 24px;
+    padding: 16px;
+    margin: auto;
+    width: fit-content;
 }
 
 #blurple {
@@ -212,6 +211,15 @@ li {
 #centercontainer {
     margin: auto;
     max-width: 1440px;
+}
+
+#titlebar {
+    background-color: lightblue;
+    color: white;
+    padding: 8px;
+    margin: 0 8px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
 }
 
 #menu {
